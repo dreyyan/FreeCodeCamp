@@ -1,0 +1,101 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <header>JavaScript Docs</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Variables" class="nav-link">Variables</a>
+    <a href="#Functions" class="nav-link">Functions</a>
+    <a href="#Loops" class="nav-link">Loops</a>
+    <a href="#Objects" class="nav-link">Objects</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-doc">
+    <!-- Section 1 -->
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a programming language that allows you to implement complex features on web pages.</p>
+      <p>It powers dynamic content, interactivity, and is one of the core technologies of the web.</p>
+      <code>console.log("Hello, World!");</code>
+      <ul>
+        <li>Client-side scripting</li>
+        <li>Event handling</li>
+        <li>DOM manipulation</li>
+      </ul>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are containers for storing data values.</p>
+      <p>JavaScript uses `var`, `let`, and `const` for variable declarations.</p>
+      <code>let name = "Ada";</code>
+      <code>const PI = 3.14159;</code>
+      <ul>
+        <li>var: function scoped</li>
+        <li>let: block scoped</li>
+        <li>const: block scoped, cannot be reassigned</li>
+      </ul>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are blocks of code designed to perform a particular task.</p>
+      <p>They are executed when invoked (called).</p>
+      <code>
+        function greet(name) {<br>
+        &nbsp;&nbsp;return "Hello " + name;<br>
+        }
+      </code>
+      <ul>
+        <li>Reusable</li>
+        <li>Can accept parameters</li>
+        <li>Can return values</li>
+      </ul>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops are used to repeatedly run a block of code while a condition is true.</p>
+      <p>Common loop types include `for`, `while`, and `do...while`.</p>
+      <code>
+        for (let i = 0; i &lt; 5; i++) {<br>
+        &nbsp;&nbsp;console.log(i);<br>
+        }
+      </code>
+      <ul>
+        <li>For loop</li>
+        <li>While loop</li>
+        <li>Do-while loop</li>
+      </ul>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="main-section" id="Objects">
+      <header>Objects</header>
+      <p>Objects are collections of key-value pairs in JavaScript.</p>
+      <p>They can contain properties and methods.</p>
+      <code>
+        const person = {<br>
+        &nbsp;&nbsp;name: "Ada",<br>
+        &nbsp;&nbsp;age: 36<br>
+        };
+      </code>
+      <ul>
+        <li>Store related data</li>
+        <li>Can contain functions (methods)</li>
+        <li>Essential to OOP in JavaScript</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
