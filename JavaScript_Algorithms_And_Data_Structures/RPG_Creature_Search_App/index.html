@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>RPG Creature Search App</title>
+  <style>
+    /* minimal styling so #types spans are visible in tests */
+    #types span { display:inline-block; margin-right:6px; padding:2px 6px; border-radius:4px; background:#eee; }
+  </style>
+</head>
+<body>
+  <label for="search-input">Search creature (name or id):</label>
+  <input id="search-input" required />
+  <button id="search-button" type="button">Search</button>
+
+  <section>
+    <h2 id="creature-name"></h2>
+    <p id="creature-id"></p>
+    <p id="weight"></p>
+    <p id="height"></p>
+    <div id="types"></div>
+
+    <p>HP: <span id="hp"></span></p>
+    <p>Attack: <span id="attack"></span></p>
+    <p>Defense: <span id="defense"></span></p>
+    <p>Special Attack: <span id="special-attack"></span></p>
+    <p>Special Defense: <span id="special-defense"></span></p>
+    <p>Speed: <span id="speed"></span></p>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
