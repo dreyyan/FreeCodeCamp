@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+    --background: #030303;
+    --text: #F5F6F5;
+    --button: #383838;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+    background-color: var(--background);
+}
+
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.vt323-bold {
+  font-family: "VT323", monospace;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#drum-machine {
+    display: grid;
+    align-items: center;
+    border-radius: 20px;
+
+    width: 600px;
+    height: 400px;
+
+    background-color: var(--text);
+}
+
+#controls-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    padding: 0 1%;
+}
+
+.drum-pad {
+    flex: 0 0 30%;
+    height: 50px;
+    margin: 0 6px;
+    border-radius: 10px;
+    background-color: var(--button);
+    border: 3px solid #1c1c1c;
+    color: var(--text);
+    font-weight: bold;
+}
