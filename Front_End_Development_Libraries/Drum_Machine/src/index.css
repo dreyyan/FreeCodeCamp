@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
 :root {
-    --background: #030303;
-    --text: #F5F6F5;
-    --button: #383838;
+    --card: #22262B;
+    --background: #2E3137;
+    --text: #EBEBEB;
+    --button1: #7DD666;
+    --button2: #EBB470;
+    --button3: #EE93F6;
 
   display: flex;
   justify-content: center;
@@ -12,46 +15,63 @@
     background-color: var(--background);
 }
 
-.vt323-regular {
-  font-family: "VT323", monospace;
+.nunito-regular {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-.vt323-bold {
-  font-family: "VT323", monospace;
+.nunito-bold {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
 }
 
 #drum-machine {
-    display: grid;
+    justify-content: center;
     align-items: center;
     border-radius: 20px;
 
-    width: 600px;
-    height: 400px;
-
-    background-color: var(--text);
+    width: 300px;
+    height: 360px;
+    padding-top: 8%;
+    background-color: var(--card);
 }
 
 #controls-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: 80%;
+    width: 100%;
+    height: 40%;
     padding: 0 1%;
 }
 
+.drum-pad:nth-child(3n+1) {
+  background-color: var(--button1);
+}
+.drum-pad:nth-child(3n+2) {
+  background-color: var(--button2);
+}
+.drum-pad:nth-child(3n+3) {
+  background-color: var(--button3);
+}
+
 .drum-pad {
-    flex: 0 0 30%;
+    flex: 0 0 22%;
     height: 50px;
-    margin: 0 6px;
+    margin: 8px 6px;
     border-radius: 10px;
     background-color: var(--button);
-    border: 3px solid #1c1c1c;
+    border: 2px solid var(--button);
     color: var(--text);
     font-weight: bold;
+}
+
+.drum-pad:hover {
+    background-color: 3px solid var(--text);
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
 }
