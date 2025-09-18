@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+    --background: #FEFEFE;
+    --number-button: #F8F8F8;
+    --utility-button: #EEF2F4;
+    --equals-button: #4488F2;
+
+    background-color: var(--background);
+    margin: 0;
+}
+
+.volkhov-regular {
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.volkhov-bold {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-style: normal;
+}
